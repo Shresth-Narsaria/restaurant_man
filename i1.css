@@ -22,6 +22,39 @@ body {
     display: none;
 }
 
+/* CSS-only Responsive Navbar */
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 7vw;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: flex !important; /* Always show menu */
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav ul li {
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav ul li:first-child {
+        border-top: none;
+    }
+
+    .bar {
+        display: none; /* Hide hamburger menu */
+    }
+}
+
+
 /* Header for laptop (start) */
 
 .header {
@@ -76,6 +109,8 @@ body {
     color: rgb(253, 57, 8);
 }
 
+
+
 /* Home page  */
 
 .home,
@@ -84,6 +119,8 @@ body {
     background-color: rgb(248, 232, 217);
     padding: 0 7vw;
 }
+
+
 
 /* section 1 */
 
@@ -99,12 +136,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 40px;
-}
-
-.main_slide div:nth-child(2) img {
-    width: 100%;
-    height: auto;
-    max-width: 500px; /* Adjust max-width as needed */
+    height: 28rem;
 }
 
 .main_slide div:nth-child(1) {
@@ -490,6 +522,7 @@ body {
     margin-bottom: 15px;
 }
 
+
 /* /Book table page CSS/ */
 
 .table {
@@ -525,6 +558,9 @@ body {
 .table .signup h3 {
     text-align: left;
 }
+
+
+
 
 .sign {
     position: fixed;
@@ -705,8 +741,28 @@ body {
     margin-top: 20px;
 }
 
-.main_slide div:nth-child(2) img {
-    width: 100%;
-    height: auto;
-    max-width: 500px; /* Adjust max-width as needed */
+
+.orders table{
+    width:100%;
+    border-collapse: collapse;
+}
+.orders .item-info{
+
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.orders th{
+    text-align:left;
+    padding:9px 100px;
+    color:white;
+    background-color:rgb(245, 206, 199) ;
+}
+.orders td{
+    padding:10px 20px
+}
+.orders td img{
+    width:100px;
+    height:80px;
+    margin-right:0px;
 }
